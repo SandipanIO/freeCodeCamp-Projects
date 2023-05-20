@@ -91,6 +91,7 @@ input[type="checkbox"] {
    width: unset;
    margin: unset;
    margin-bottom: 1rem;
+   margin-right: .5rem;
 }
 
 .name,
@@ -149,4 +150,14 @@ textarea {
 .submit:hover {
    background-color: transparent;
    color: #222;
+}
+
+footer {
+   text-align: center;
+   margin-top: 4rem;
+}
+
+a:link,
+a:visited {
+   color: #008080;
 }
