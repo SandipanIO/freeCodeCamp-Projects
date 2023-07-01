@@ -1,0 +1,272 @@
+/* --------------------------------------------------------------------------- */
+/* CSS Custom Properties */
+/* --------------------------------------------------------------------------- */
+
+:root {
+   --color-white: #ffffff;
+   --color-red: #de6262;
+
+   --max-width: calc(1200rem / 16);
+}
+
+/* --------------------------------------------------------------------------- */
+/* CSS Reset */
+/* --------------------------------------------------------------------------- */
+
+/* Box sizing rules */
+html {
+   box-sizing: border-box;
+}
+ 
+*,
+*::before,
+*::after {
+   box-sizing: inherit;
+}
+ 
+/* Remove default margin and padding */
+* {
+   margin: 0;
+   padding: 0;
+}
+ 
+/* Set core root defaults */
+html {
+   scroll-behavior: smooth;
+}
+ 
+/* Set core body defaults */
+body {
+   min-height: 100vh;
+   line-height: 1.5;
+}
+ 
+/* Make images easier to work with */
+img,
+picture,
+figure,
+svg {
+   display: block;
+   max-width: 100%;
+}
+ 
+/* Remove list styles on ul, ol elements with a list role */
+ul[role=list],
+ol[role=list] {
+   list-style: none;
+}
+ 
+/* Added to body. This makes transitions only after page load. Later removed using JS */
+.preload * {
+   -webkit-transition: none !important;
+   -moz-transition: none !important;
+   -ms-transition: none !important;
+   -o-transition: none !important;
+   transition: none !important;
+}
+ 
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+   html:focus-within {
+     scroll-behavior: auto;
+   }
+   
+   *,
+   *::before,
+   *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+   }
+}
+
+/* --------------------------------------------------------------------------- */
+/* Ultility Classes */
+/* --------------------------------------------------------------------------- */
+
+.container {
+   width: min(var(--max-width), 100% - 3em);
+   margin-inline: auto;
+}
+
+.image-box {
+   padding: 0.5em;
+   border: 2px solid #ececec;
+   border-radius: 0.5em;
+}
+
+/* --------------------------------------------------------------------------- */
+/* General Styles */
+/* --------------------------------------------------------------------------- */
+
+body {
+   font-family: 'Open Sans', sans-serif;
+   font-size: calc(16rem / 16);
+   font-weight: 400;
+}
+
+.link {
+   color: var(--color-red);
+}
+
+/* --------------------------------------------------------------------------- */
+/* Typography */
+/* --------------------------------------------------------------------------- */
+
+.heading-2 {
+   font-size: 1.75rem;
+   text-transform: uppercase;
+   text-align: center;
+   margin-bottom: 3em;
+}
+
+.heading-2::after {
+   content: '';
+   display: block;
+   width: calc(75rem / 16);
+   height: 0.25rem;
+   background-color: var(--color-red);
+   margin: 1rem auto;
+}
+
+/* --------------------------------------------------------------------------- */
+/* Hero Section */
+/* --------------------------------------------------------------------------- */
+
+.hero {
+   min-height: 92.5vh;
+   background-image: linear-gradient(to bottom right, rgba(255, 102, 31, 0.6), rgba(4, 106, 57, 0.6)), 
+                     url(../images/dr-apj-abdul-kalam.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+   position: relative;
+}
+
+.hero__banner {
+   position: absolute;
+   top: 35%;
+   left: 0;
+   color: var(--color-white);
+   background-color: rgba(0, 0, 0, 0.7);
+   padding: 3.5em 3em;
+}
+
+.main-nav {
+   width: 100%;
+   background-color: rgba(0, 0, 0, 0.95);
+   position: sticky;
+   top: 0;
+   z-index: 100;
+}
+
+.main-nav__list {
+   display: flex;
+   justify-content: space-around;
+   padding-block: 0.75em;
+   list-style: none;
+}
+
+.main-nav__link:link,
+.main-nav__link:visited {
+   color: var(--color-white);
+   text-decoration: none;
+   text-transform: uppercase;
+   font-weight: 600;
+}
+
+.main-nav__link:hover,
+.main-nav__link:active {
+   color: var(--color-red);
+}
+
+/* --------------------------------------------------------------------------- */
+/* Life Section */
+/* --------------------------------------------------------------------------- */
+
+.life {
+   margin-block: 6rem;
+}
+
+.life__wrapper {
+   display: flex;
+   gap: 3em;
+}
+
+.life__image {
+   width: 100%;
+   object-fit: contain;
+}
+
+/* --------------------------------------------------------------------------- */
+/* Books Section */
+/* --------------------------------------------------------------------------- */
+
+.books {
+   margin-block: 6em;
+}
+
+.books__list {
+   list-style: none;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 2em;
+}
+
+.books__image {
+   width: 100%;
+   height: 100%;
+}
+
+/* --------------------------------------------------------------------------- */
+/* Quotes Section */
+/* --------------------------------------------------------------------------- */
+
+.quotes {
+   margin-block: 6rem;
+}
+
+.quotes__item {
+   background-color: var(--color-white);
+   padding-block: 3.25em;
+   padding-inline: 4.5em 2em;
+   box-shadow: 0 0 5px #c9c9c9;
+   border-radius: 0.75em;
+   margin-block: 2.5em;
+   position: relative;
+}
+
+.quotes__item::before {
+   content: '\201F';
+   position: absolute;
+   top: 1rem;
+   left: 2rem;
+   display: inline;
+   color: var(--color-red);
+   font-size: 3.5rem;
+   font-weight: 600;
+}
+
+/* --------------------------------------------------------------------------- */
+/* Footer */
+/* --------------------------------------------------------------------------- */
+
+.footer {
+   background-color: rgba(0, 0, 0, 0.95);
+   color: var(--color-white);
+   font-size: calc(14rem / 16);
+   text-align: center;
+   padding-block: 1.1em;
+}
+
+.footer__link:link,
+.footer__link:visited {
+   color: var(--color-white);
+}
+
+.footer__link:hover,
+.footer__link:active {
+   text-decoration: none;
+}
