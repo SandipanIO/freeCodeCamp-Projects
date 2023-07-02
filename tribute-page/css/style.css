@@ -136,6 +136,10 @@ body {
 }
 
 @media (max-width: 60em) {
+   .heading-1 {
+      font-size: 1.8rem;
+   }
+
    .heading-2 {
       margin-bottom: 2em;
    }
@@ -167,15 +171,20 @@ body {
 
 @media (max-width: 60em) {
    .hero {
-      min-height: 90vh;
+      background-image: linear-gradient(to bottom right, rgba(255, 102, 31, 0.6), rgba(4, 106, 57, 0.6)), 
+                     url(../images/A._P._J._Abdul_Kalam.jpg);
    }
 
    .hero__banner {
       top: unset;
       bottom: 0;
       width: 100%;
-      padding: 2em 0.5em;
+      padding: 1.8em 0.5em;
       text-align: center;
+   }
+
+   .hero__text {
+      font-size: calc(15rem / 16);
    }
 }
 
@@ -251,6 +260,10 @@ body {
 }
 
 @media (max-width: 46em) {
+   .life {
+      margin-top: 4em;
+   }
+
    .life__wrapper {
       grid-template-rows: repeat(2, auto);
       grid-template-columns: 100%;
@@ -304,6 +317,11 @@ body {
 }
 
 @media (max-width: 35em) {
+
+   .books {
+      margin-block: 4em;
+   }
+
    .books__list {
       grid-template-rows: repeat(4, 1fr);
       grid-template-columns: 100%;
@@ -353,7 +371,11 @@ body {
    }
 
    .quotes__item {
-      padding-inline: 4em 2em;
+      padding-inline: 3em 2em;
+   }
+
+   .quotes__item::before {
+      left: 1rem;
    }
 }
 
