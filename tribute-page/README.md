@@ -1,6 +1,6 @@
 # Tribute Page for Dr. APJ Abdul Kalam
 
-This tribute page for Dr APJ Abdul Kalam is a part of the certification project of the Responsive Web Design course (freeCodeCamp). 
+This tribute page for Dr. APJ Abdul Kalam is a part of the certification project of the Responsive Web Design course (freeCodeCamp). 
 
 Check out the live preview here: [Demo](https://sandipan-ajp-abdul-kalam-tribute.netlify.app/)
 
@@ -14,13 +14,13 @@ Check out the live preview here: [Demo](https://sandipan-ajp-abdul-kalam-tribute
 
 ## Overview
 
-It has been built using HTML and CSS. I have used BEM (Block, Element, Modifier) methodology for naming the classes. No JavaScript was used to built this tribute page.
+It has been built using HTML and CSS. I have used BEM (Block, Element, Modifier) methodology for naming the classes. No JavaScript was used to build this tribute page.
 
 ## Screenshot
 
 **Desktop version:**
 
-![Desktop Version](https://github.com/SandipanIO/freeCodeCamp-projects/blob/main/tribute-page/screenshot/Dr-APJ-Abdul-Kalam-Tribute-Page.png)
+![Desktop Version of freeCodeCamp's tribute page](https://github.com/SandipanIO/freeCodeCamp-projects/blob/main/tribute-page/screenshot/Dr-APJ-Abdul-Kalam-Tribute-Page.png)
 
 ## Links
 
