@@ -139,5 +139,6 @@ a:hover {
       position: absolute;
       top: 0;
       left: 350px;
+      padding: 2em 3.5em;
    }
 }
