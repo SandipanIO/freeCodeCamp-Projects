@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- Stylesheet -->
+   <link rel="stylesheet" href="styles.css">
+
+   <title>Technical Documentation Page</title>
+</head>
+<body>
+   <main id="main-doc" class="main">
+      <aside class="sidebar">
+         <nav id="navbar" class="primary-nav">
+            <header>
+               <h1 class="logo">CSS Documentation</h1>
+            </header>
+            <ul class="primary-nav__list">
+               <li class="primary-nav__item">
+                  <a href="#Introduction" class="primary-nav__link nav-link">Introduction</a>
+               </li>
+               <li class="primary-nav__item">
+                  <a href="#What_is_CSS_For" class="primary-nav__link nav-link">What is CSS For</a>
+               </li>
+               <li class="primary-nav__item">
+                  <a href="#Adding_CSS_to_Our_Document" class="primary-nav__link nav-link">Adding CSS to Our Document</a>
+               </li>
+               <li class="primary-nav__item">
+                  <a href="#CSS_Syntax" class="primary-nav__link nav-link">CSS Syntax</a>
+               </li>
+               <li class="primary-nav__item">
+                  <a href="#Adding_a_CSS_Class" class="primary-nav__link nav-link">Adding a CSS Class</a>
+               </li>
+               <li class="primary-nav__item">
+                  <a href="#Reference" class="primary-nav__link nav-link">Reference</a>
+               </li>
+            </ul>
+         </nav>
+      </aside>
+      <div class="content">
+         <section class="main-section" id="Introduction">
+            <header class="main-section__heading">
+               Introduction
+            </header>
+            <div class="main-section__content">
+               <p class="main-section__paragraph">Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML. CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.</p>
+               <p class="main-section__paragraph">CSS is among the core languages of the open web and is standardized across Web browsers according to W3C specifications. Previously, the development of various parts of CSS specification was done synchronously, which allowed the versioning of the latest recommendations. You might have heard about CSS1, CSS2.1, or even CSS3. There will never be a CSS3 or a CSS4; rather, everything is now CSS without a version number.</p>
+            </div>
+         </section>
+         <section class="main-section" id="What_is_CSS_For">
+            <header class="main-section__heading">
+               What is CSS For
+            </header>
+            <div class="main-section__content">
+               <p class="main-section__paragraph">CSS (Cascading Style Sheets) allows you to create great-looking web pages. It is a language for specifying how documents are presented to users — how they are styled, laid out, etc.</p>
+               <p class="main-section__paragraph">A document is usually a text file structured using a markup language — HTML is the most common markup language, but you may also come across other markup languages such as SVG or XML.</p>
+               <p class="main-section__paragraph">Presenting a document to a user means converting it into a form usable by your audience. Browsers, like Firefox, Chrome, or Edge, are designed to present documents visually, for example, on a computer screen, projector, or printer.</p>
+               <p class="main-section__paragraph">CSS can be used for very basic document text styling — for example, for changing the color and size of headings and links. It can be used to create a layout — for example, turning a single column of text into a layout with a main content area and a sidebar for related information. It can even be used for effects such as animation.</p>
+            </div>
+         </section>
+         <section class="main-section" id="Adding_CSS_to_Our_Document">
+            <header class="main-section__heading">
+               Adding CSS to Our Document
+            </header>
+            <div class="main-section__content">
+               <p class="main-section__paragraph">The very first thing we need to do is to tell the HTML document that we have some CSS rules we want it to use.</p>
+               <p class="main-section__paragraph">There are three different ways to apply CSS to an HTML document that you'll commonly come across, however, for now, we will look at the most usual and useful way of doing so — linking CSS from the head of your document.</p>
+               <p class="main-section__paragraph">Create a file in the same folder as your HTML document and save it as <code>styles.css</code>. The .css extension shows that this is a CSS file. To link <code>styles.css</code> to index.html, add the following line somewhere inside the <code>&lt;head&gt;</code> of the HTML document:</p>
+               <pre class="main-section__pre">
+                  <code>
+                     &lt;link rel="stylesheet" href="styles.css" /&gt;
+                  </code>   
+               </pre>
+               <p class="main-sections__paragraph">This <code>&lt;link&gt;</code> element tells the browser that we have a stylesheet, using the rel attribute, and the location of that stylesheet as the value of the href attribute.</p>
+            </div>
+         </section>
+         <section class="main-section" id="CSS_Syntax">
+            <header class="main-section__heading">
+               CSS Syntax
+            </header>
+            <div class="main-section__content">
+               <p class="main-section__paragraph">CSS is a rule-based language — you define the rules by specifying groups of styles that should be applied to particular elements or groups of elements on your web page.</p>
+               <p class="main-section__paragraph">For example, you can decide to have the main heading on your page to be shown as large red text. The following code shows a very simple CSS rule that would achieve the styling described above:</p>
+               <pre class="main-section__pre">
+                  <code>
+                     h1 {
+                        color: red;
+                        font-size: 5em;
+                     }
+                  </code>   
+               </pre>
+               <ul class="main-section__list">
+                  <li>In the above example, the CSS rule opens with a selector. This selects the HTML element that we are going to style. In this case, we are styling level one headings (h1).</li>
+                  <li>We then have a set of curly braces { }.</li>
+                  <li>Inside the braces will be one or more declarations, which take the form of property and value pairs. We specify the property (color in the above example) before the colon, and we specify the value of the property after the colon (red in this example).</li>
+                  <li>This example contains two declarations, one for color and the other for font-size. Each pair specifies a property of the element(s) we are selecting (h1 in this case), then a value that we'd like to give the property.</li>
+               </ul>
+               <p class="main-section__paragraph">CSS properties have different allowable values, depending on which property is being specified. In our example, we have the color property, which can take various color values. We also have the font-size property. This property can take various size units as a value.</p>
+               <p class="main-sections__paragraph">A CSS stylesheet will contain many such rules, written one after the other:</p>
+               <pre class="main-section__pre">
+                  <code>
+                  h1 {
+                     color: red;
+                     font-size: 5em;
+                   }
+                   
+                  p {
+                     color: black;
+                  }
+                  </code>
+               </pre>
+            </div>
+         </section>
+         <section class="main-section" id="Adding_a_CSS_Class">
+            <header class="main-section__heading">
+               Adding a CSS Class
+            </header>
+            <div class="main-section__content">
+               <p class="main-section__paragraph">So far, we have styled elements based on their HTML element names. This works as long as you want all of the elements of that type in your document to look the same. To select a subset of the elements without changing the others, you can add a class to your HTML element and target that class in your CSS.</p>
+               <ol class="main-section__list">
+                  <li>
+                     In your HTML document, add a class attribute to the second list item. Your list will now look like this:
+                     <pre class="main-section__pre">
+                        <code>
+                           &lt;ul&gt;
+                              &lt;li&gt;Item one&lt;/li&gt;
+                              &lt;li class="special"&gt;Item two&lt;/li&gt;
+                              &lt;li&gt;Item three&lt;/li&gt;
+                           &lt;/ul&gt;
+                        </code>   
+                     </pre>
+                  </li>
+                  <li>
+                     In your CSS, you can target the class of <code>special</code> by creating a selector that starts with a full stop character. Add the following to your CSS file:
+                     <pre class="main-section__pre">
+                        <code>
+                           .special {
+                              color: orange;
+                              font-weight: bold;
+                            }
+                        </code>   
+                     </pre>
+                  </li>
+                  <li>Save and refresh to see what the result is.</li>
+               </ol>
+               <p class="main-sections__paragraph">You can apply the class of special to any element on your page that you want to have the same look as this list item.</p>
+            </div>
+         </section>
+         <section class="main-section" id="Reference">
+            <header class="main-section__heading">
+               Reference
+            </header>
+            <div class="main-section__content">
+               <p class="main-section__paragraph">All the documentation in this page is taken from <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">MDN Web Docs</a>.</p>
+            </div>
+         </section>
+      </div>
+   </main>
+</body>
+</html>
