@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- Google Fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+   
+   <!-- Stylesheet -->
+   <link rel="stylesheet" href="styles.css">
+
+   <title>Nature's Gold Honey landing page</title>
+</head>
+<body>
+   <!-- Skip to main content -->
+   <a href="#" class="skip-to-main-content">Skip to main content</a>
+
+   <!-- Header -->
+   <header class="header">
+      <div class="header__wrapper container">
+         <img src="assets/logo.png" alt="Nature's Gold Honey" class="logo">
+         <nav id="main-nav" class="main-nav" aria-label="Primary">
+            <button id="btn-menu" class="btn btn__menu" aria-label="Menu" 
+                        aria-controls="main-nav-list" aria-expanded="false">
+               <img id="btn-open-menu" class="btn__open-menu" src="assets/menu.svg" alt="">
+               <img id="btn-close-menu" class="btn__close-menu" src="assets/close.svg" alt="">
+            </button>
+            <ul id="main-nav-list" class="main-nav__list" role="list" data-mobile-menu-visible="false">
+               <li role="listitem">
+                  <a href="#" class="main-nav__link">Our Process</a>
+               </li>
+               <li role="listitem">
+                  <a href="#" class="main-nav__link">Products</a>
+               </li>
+               <li role="listitem">
+                  <a href="#" class="main-nav__link">Gallery</a>
+               </li>
+               <li role="listitem">
+                  <a href="#" class="main-nav__link">Testimonials</a>
+               </li>
+               <li role="listitem">
+                  <a href="#" class="main-nav__link">Faq</a>
+               </li>
+               <li role="listitem">
+                  <a href="#" class="main-nav__link">Contact</a>
+               </li>
+            </ul>
+         </nav>
+      </div>
+      <div class="hero container">
+         <div class="hero__content">
+            <h1 class="heading-1 hero__heading">
+               Nature's Gold Honey
+            </h1>
+            <p class="hero__text">Indulge in the rich and natural sweetness of Nature's Gold Honey. Our honey is meticulously harvested from thriving, pesticide-free bee farms, where bees dance amidst wildflowers.</p>
+            <button class="btn btn__cta">Shop Now</button>
+         </div>
+         <div class="hero__video">
+            <video width="100%" controls muted autoplay loop>
+               <source src="assets/video.mp4" type="video/mp4">
+               Your browser does not support the video tag.
+               </video>
+         </div>
+      </div>
+   </header>
+   
+   <main>
+      <!-- Process -->
+      <div id="process" class="process | section-padding">
+         <div class="container">
+            <h2 class="heading-2">Our Process</h2>
+            <div class="process__wrapper">
+               <div class="process__image-box">
+                  <img src="assets/natures-gold-honey.jpg" alt="Nature's gold honey bottle" class="process__img">
+               </div>
+               <div class="process__content-box">
+                  <ul class="process__list" role="list">
+                     <li class="process__item" role="listitem">
+                        <div class="process__number">1</div>
+                        <div class="process__content">
+                           <h3 class="process__title | heading-3">Bee Careful Harvesting</h3>
+                           <p class="process__text">
+                              Our skilled beekeepers prioritize the safety and well-being of our buzzing friends during every step of the harvest.
+                           </p>
+                        </div> 
+                     </li>
+                     <li class="process__item" role="listitem">
+                        <div class="process__number">2</div>
+                        <div class="process__content-block">
+                           <h3 class="process__title | heading-3">Blossom Haven</h3>
+                           <p class="process__text">
+                              Our bees roam freely in pesticide-free farms, feasting on a diverse array of wildflowers that contribute to the unique flavor profile of our honey.
+                           </p>
+                        </div>
+                     </li>
+                     <li class="process__item" role="listitem">
+                        <div class="process__number">3</div>
+                        <div class="process__content-block">
+                           <h3 class="process__title | heading-3">Golden Harvest</h3>
+                           <p class="process__text">
+                              With precision and care, we extract honeycomb frames, collecting only the excess honey to ensure ample supply for our thriving bee colonies.
+                           </p>
+                        </div>
+                     </li>
+                     <li class="process__item" role="listitem">
+                        <div class="process__number">4</div>
+                        <div class="process__content-block">
+                           <h3 class="process__title | heading-3">Natural Perfection</h3>
+                           <p class="process__text">
+                              The collected honey undergoes a natural filtering process, preserving its wholesome goodness and rich flavors, just as nature intended.
+                           </p>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div> <!-- End of Process section -->
+
+      <!-- CTA -->
+      <div class="cta">
+         <div class="cta__wrapper">
+            <p class="cta__text">
+               Immerse yourself in the exquisite taste of pure organic honey, handcrafted with care from the nectar of wildflowers. Delight in its rich flavor, vibrant aroma, and healthful benefits, and experience the true sweetness of nature in every golden drop.
+            </p>
+            <button class="cta__button | btn btn__cta">Shop Now</button>
+         </div>
+      </div>
+
+      <!-- Products -->
+      <div id="products" class="products | section-padding">
+         <div class="container">
+            <h2 class="heading-2">Products</h2>
+            <div class="products__wrapper">
+               <!-- 250g Bottle -->
+               <div class="product-card">
+                  <img class="product-card__img" src="assets/honey.jpg" alt="">
+                  <div class="product-card__content-box">
+                     <h3 class="product-card__title | heading-3">250g Bottle</h3>
+                     <div class="product-card__price">
+                        <span class="product-card__sale-price">$12.99</span>
+                        <del class="product-card__regular-price">$19.99</del>
+                     </div>
+                     <p class="product-card__description">
+                        Ideal for adding sweetness to your favorite beverages or drizzling over fresh pastries.
+                     </p>
+                     <button class="btn btn__cart">Add to cart</button>
+                  </div>
+               </div>
+               <!-- 500g Bottle -->
+               <div class="product-card">
+                  <img class="product-card__img" src="assets/honey.jpg" alt="">
+                  <div class="product-card__content-box">
+                     <h3 class="product-card__title | heading-3">500g Bottle</h3>
+                     <div class="product-card__price">
+                        <span class="product-card__sale-price">$22.99</span>
+                        <del class="product-card__regular-price">$29.99</del>
+                     </div>
+                     <p class="product-card__description">
+                        Experience the rich flavors and natural goodness in every spoonful in this 500g bottle.
+                     </p>
+                     <button class="btn btn__cart">Add to cart</button>
+                  </div>
+               </div>
+               <!-- 1kg Bottle -->
+               <div class="product-card">
+                  <img class="product-card__img" src="assets/honey.jpg" alt="">
+                  <div class="product-card__content-box">
+                     <h3 class="product-card__title | heading-3">1kg Bottle</h3>
+                     <div class="product-card__price">
+                        <span class="product-card__sale-price">$32.99</span>
+                        <del class="product-card__regular-price">$39.99</del>
+                     </div>
+                     <p class="product-card__description">
+                        Perfect for families and those who truly appreciate the gift of nature's sweetness.
+                     </p>
+                     <button class="btn btn__cart">Add to cart</button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div> <!-- End of Products section -->
+
+      <!-- Gallery -->
+      <div id="gallery" class="gallery" aria-label="Gallery">
+         <div class="gallery__image-box">
+            <img class="gallery__img" src="assets/1.jpg" alt="">
+         </div>
+         <div class="gallery__image-box">
+            <img class="gallery__img" src="assets/2.jpg" alt="">
+         </div>
+         <div class="gallery__image-box">
+            <img class="gallery__img" src="assets/3.jpg" alt="">
+         </div>
+         <div class="gallery__image-box">
+            <img class="gallery__img" src="assets/4.jpg" alt="">
+         </div>
+      </div> <!-- End of Gallery section -->
+
+      <!-- Testimonial -->
+      <div id="testimonials" class="testimonial | section-padding">
+         <div class="container">
+            <h2 class="heading-2">Testimonials</h2>
+            <div class="testimonial__wrapper">
+               <div class="testimonial__card">
+                  <img class="testimonial__image" src="assets/image-emily.jpg" alt="Photo of Emily">
+                  <p class="testimonial__text">
+                     Nature's Gold Honey is a game-changer. Its unique taste took me back to the wild, where honey is as nature intended.
+                  </p>
+                  <p class="testimonial__name">
+                     Emily T.
+                  </p>
+                  <p class="testimonial__social-handle">
+                     @emilyt
+                  </p>
+               </div>
+               <div class="testimonial__card">
+                  <img class="testimonial__image" src="assets/image-david.jpg" alt="Photo of David">
+                  <p class="testimonial__text">
+                     I'm incredibly picky about the food I consume, and finding products of such quality is rare. This honey has become a staple in my kitchen.
+                  </p>
+                  <p class="testimonial__name">
+                     David P.
+                  </p>
+                  <p class="testimonial__social-handle">
+                     @davidp
+                  </p>
+               </div>
+               <div class="testimonial__card">
+                  <img class="testimonial__image" src="assets/image-jennie.jpg" alt="Photo of Jennie">
+                  <p class="testimonial__text">
+                     Supporting brands that prioritize sustainability is essential. Nature's Gold Honey not only satisfies my taste buds but also my values.
+                  </p>
+                  <p class="testimonial__name">
+                     Jennie F.
+                  </p>
+                  <p class="testimonial__social-handle">
+                     @jennief
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div> <!-- End of Testimonial section -->
+
+      <!-- FAQ -->
+      <div id="faq" class="faq">
+         <div class="container">
+            <h2 class="heading-2">
+               Frequently Asked Questions
+            </h2>
+            <div class="faq__wrapper">
+               <div class="faq__image-block">
+                  <img src="assets/faq.png" alt="">
+               </div>
+               <div class="faq__content-block">
+                  <details class="faq__item" open>
+                     <summary class="faq__title">
+                        Is Nature's Gold Honey organic?
+                        <img class="faq__icon" src="assets/icon-arrow-down.svg" alt="">
+                     </summary>
+                     <div class="faq__desc">
+                        Yes, absolutely. Our honey is sourced from meticulously managed organic bee farms, ensuring the purest and most natural product.
+                     </div>
+                  </details>
+                  <details class="faq__item">
+                     <summary class="faq__title">
+                        Where do you source your honey from?
+                        <img class="faq__icon" src="assets/icon-arrow-down.svg" alt="">
+                     </summary>
+                     <div class="faq__desc">
+                        Our honey comes from bees that forage on wildflowers in pristine, pesticide-free environments, capturing the essence of untouched nature.
+                     </div>
+                  </details>
+                  <details class="faq__item">
+                     <summary class="faq__title">
+                        Is your packaging eco-friendly?
+                        <img class="faq__icon" src="assets/icon-arrow-down.svg" alt="">
+                     </summary>
+                     <div class="faq__desc">
+                        Yes, we prioritize sustainability. Our packaging materials are chosen with care, reflecting our dedication to both the environment and the quality of our product.
+                     </div>
+                  </details>
+                  <details class="faq__item">
+                     <summary class="faq__title">
+                        Do you ship internationally?
+                        <img class="faq__icon" src="assets/icon-arrow-down.svg" alt="">
+                     </summary>
+                     <div class="faq__desc">
+                        Yes, we offer international shipping. Please check our shipping page for more details on delivery to your location.
+                     </div>
+                  </details>
+                  <details class="faq__item">
+                     <summary class="faq__title">
+                        How can I contact your customer support?
+                        <img class="faq__icon" src="assets/icon-arrow-down.svg" alt="">
+                     </summary>
+                     <div class="faq__desc">
+                        Please feel free to reach out to our friendly customer support team through the <a class="link" href="#contact">contact section</a> on our website. We're here to assist you!
+                     </div>
+                  </details>
+               </div>
+            </div>
+         </div>
+      </div> <!-- End of FAQ section -->
+
+      <!-- Contact -->
+      <div id="contact" class="contact | container">
+         <h2 class="heading-2">Contact Us</h2>
+         <form action="https://www.freecodecamp.com/email-submit" method="post" class="form">
+            <div class="form__input-box">
+               <div>
+                  <label class="form__label" for="first-name">First Name</label>
+                  <input class="form__input" id="first-name" name="first-name" type="text" required>
+               </div>
+               <div>
+                  <label class="form__label" for="last-name">Last Name</label>
+                  <input class="form__input" id="last-name" name="last-name" type="text" required>
+               </div>
+            </div>
+            <div>
+               <label class="form__label" for="email">Email</label>
+               <input class="form__input" id="email" name="email" type="text" required>
+            </div>
+            <div>
+               <label class="form__label" for="message">Message</label>
+               <textarea class="form__textarea" rows="6" name="message" id="message" required></textarea>
+            </div>
+            <div>
+               <input class="btn btn__contact" type="submit" value="Submit">
+            </div>
+         </form>
+      </div> <!-- End of Contact section -->
+   </main>
+
+   <!-- Footer -->
+   <footer class="footer">
+      <div class="container">
+         <div class="footer__wrapper">
+            <img src="assets/logo.png" alt="Nature's Gold Honey" class="footer__logo">
+            <p class="footer__copyright">
+               Designed and Coded by <a class="link link__white" href="https://twitter.com/SandipanIO">Sandipan</a>.
+            </p>
+         </div>
+      </div>
+   </footer>
+
+   <script src="script.js"></script>
+</body>
+</html>
